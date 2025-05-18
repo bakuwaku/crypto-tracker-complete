@@ -8,6 +8,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.static('public'));
 
+
 app.get('/api/assets', async (req, res) => {
   try {
     const response = await fetch('https://api.coincap.io/v2/assets');
@@ -18,6 +19,7 @@ app.get('/api/assets', async (req, res) => {
     res.status(500).json({ error: 'Failed to fetch data' });
   }
 });
+
 
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'public/index.html'));
