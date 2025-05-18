@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chart - Crypto History</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Historical Price Chart</h1>
+  <label for="coin_id">Enter Coin ID:</label>
+  <input type="text" id="coin_id" value="bitcoin" />
+  <button onclick="loadChart()">Load Chart</button>
+  <canvas id="priceChart" width="600" height="400"></canvas>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="chart.js"></script>
+</body>
+</html>

@@ -3,6 +3,8 @@ body {
   padding: 20px;
   background: #f7f7f7;
 }
+
+
 form {
   display: flex;
   flex-direction: column;
@@ -10,4 +12,16 @@ form {
 }
 label, input, button {
   margin-bottom: 10px;
+  padding: 5px;
+}
+
+
+input, button {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+
+#portfolio-container {
+  padding-top: 20px;
 }
