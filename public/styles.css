@@ -1,8 +1,13 @@
 body {
   font-family: Arial, sans-serif;
   padding: 20px;
-  background-color: #f0f0f0;
+  background: #f7f7f7;
 }
-h1 {
-  color: #333;
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+}
+label, input, button {
+  margin-bottom: 10px;
 }

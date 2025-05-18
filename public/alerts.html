@@ -2,11 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Alerts - Crypto Tracker</title>
+  <title>Set Price Alerts</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>Set Price Alerts</h1>
-  <p>Feature coming soon!</p>
+  <h1>Set a Price Alert</h1>
+  <form id="alert-form">
+    <label for="coin_id">Coin ID (e.g., bitcoin):</label>
+    <input type="text" id="coin_id" name="coin_id" required />
+    <label for="target_price">Target Price ($):</label>
+    <input type="number" id="target_price" name="target_price" step="0.01" required />
+    <button type="submit">Save Alert</button>
+  </form>
+  <p id="status"></p>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="alerts.js"></script>
 </body>
 </html>
